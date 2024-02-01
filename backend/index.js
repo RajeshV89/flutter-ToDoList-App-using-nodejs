@@ -8,7 +8,7 @@ mongoose.connect('mongodb://localhost:27017/todolist-app')
         .then(()=>console.log("Connected to MongoDB todolist-app"))
         .catch(error=>console.error("Could not connect to MongoDB"));
 
-
+app.use(express.json());
 app.use('/api/todolist',toDoList);
 
 app.get('/',(req,res)=>{
