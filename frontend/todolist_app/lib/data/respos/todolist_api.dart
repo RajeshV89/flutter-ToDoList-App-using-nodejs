@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:todolist_app/data/model/todolist_model.dart';
 
 class ToDoListRepo {
-  static Future<List<TodoListModel>> getToDoList() async {
+  Future<List<TodoListModel>> getToDoList() async {
     String endpoint = 'http://localhost:9600/api/todolist';
     try {
       var response = await http.get(Uri.parse(endpoint));
