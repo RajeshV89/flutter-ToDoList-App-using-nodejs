@@ -3,7 +3,7 @@ class TodoListModel {
   final String? taskName;
   final String? taskDetail;
   final String? dateData;
-  final bool? taskCheck;
+  bool? taskCheck;
   final String? activity;
   final bool? priority;
   final int? iV;
