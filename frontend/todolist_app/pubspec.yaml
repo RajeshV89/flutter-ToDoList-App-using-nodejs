@@ -11,7 +11,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.3
+  font_awesome_flutter: ^10.7.0
+  google_fonts: ^6.1.0
   http: ^1.2.0
+  scrollable_positioned_list: ^0.3.8
 
 dev_dependencies:
   flutter_lints: ^3.0.1
@@ -19,4 +22,17 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Black.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Thin.ttf
+
+        
+
   uses-material-design: true
+

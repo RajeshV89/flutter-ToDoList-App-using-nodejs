@@ -9,6 +9,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Hi there,'),
+        centerTitle: false,
+        backgroundColor: Colors.black54,
+      ),
       body: BlocBuilder<GetToDoListBloc, GetToDoListState>(
           builder: (context, state) {
         if (state is GetToDoListInitialState) {
@@ -24,12 +29,6 @@ class HomePage extends StatelessWidget {
           return const Center(child: Text('Unknown State'));
         }
       }),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          context.read<GetToDoListBloc>().add(LoadToDoList());
-        },
-        child: const Icon(Icons.refresh),
-      ),
     );
   }
 }
